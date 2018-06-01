@@ -10,7 +10,7 @@
     <div *ngIf="truncating && len > limit">
       {{product.desc | truncateText : limit}}
 
-      <p><a id="lik" href="" routerLink="cart">Show more</a></p>
+      <!--p><a id="lik" href="" routerLink="cart">Show more</a></p-->
     </div>
     <div *ngIf="product.key">
       <button class="btn btn-block btn-primary" *ngIf="ordered==0" (click)="increase()">Add to Cart</button>
