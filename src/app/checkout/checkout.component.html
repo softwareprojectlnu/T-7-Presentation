@@ -1,0 +1,40 @@
+<div *ngIf="!showorder">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col" id="ass">Quantity</th>
+      </tr>
+      </thead>
+    
+      <tr *ngFor="let item of items$ | async; trackBy:trackByFn; let i = index">
+        <td>{{ (item.product | doc | async)?.title }}</td>
+        <td>{{ (item.product | doc | async)?.price | currency:'EUR':'symbol' }}</td>
+        <td id="#ass">{{itemnumber[i]}}</td>
+    
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th>Total: </th>
+        <th>{{ cartTotal$ | async | currency:'EUR':'symbol' }}</th>
+        <th></th>
+      </tr>
+      </tfoot>
+    </table>
+      </div>
+    
+    
+    <div *ngIf="!showorder">
+    <button class="btn btn-outline-info" type="submit" (click) = "checkout()">checkout</button>
+      </div>
+    
+    
+    
+              <div *ngIf="showorder">
+                <h1 id="hey2">Thank you For your Purchase</h1>
+                <h2 id="hey1">Your order number is</h2>
+                <h3 id="hey1">{{ord.getkey()}}</h3>
+              </div>
+    

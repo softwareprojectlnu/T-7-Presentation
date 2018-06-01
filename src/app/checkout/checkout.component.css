@@ -1,0 +1,38 @@
+.card-hello{
+  border: 1px solid black;
+  margin: 30px 0px 0px 0px;
+}
+.card{
+  border: 1px solid black;
+  margin: 100px;
+}
+.card-hey{
+  border: 1px solid black;
+  margin: 30px 0px 100px 100px;
+}
+#ass{
+  /*font-size: larger ;*/
+  position: center;
+  text-align: center;
+
+}
+.container{
+  padding: 10px;
+  position: center;
+}
+
+#hey{
+  margin: 10px;
+  text-align: center;
+  color: #00a379;
+}
+#hey1{
+  margin: 10px;
+  text-align: center;
+  color: #00bc8c;
+}
+#hey2{
+  margin: 10px;
+  text-align: center;
+  color: #007f5e;
+}
